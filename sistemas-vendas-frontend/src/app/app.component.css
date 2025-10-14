@@ -42,7 +42,12 @@
   font-size: 1.6rem;
 }
 
-.div-carrinho {
+/* .div-carrinho {
+  margin-left: auto;
+} */
+
+.acoes-usuario {
+  display: flex;
   margin-left: auto;
 }
 
@@ -71,7 +76,8 @@
 }
 
 @media (max-width: 1030px) {
-  .div-carrinho {
+  .acoes-usuario {
+    display: flex;
     margin: 0;
   }
 }
@@ -86,10 +92,10 @@
   .nav-menu {
     gap: 10px;
   }
-
+/*
   .nav-item span {
     display: none;
-  }
+  } */
 
   .nav-item {
     padding: 10px;
@@ -144,5 +150,12 @@
   display: block;
 }
 
+
+}
+
+@media screen and (max-width: 520px) {
+  .nav-item span {
+    font-size: 15px;
+  }
 
 }

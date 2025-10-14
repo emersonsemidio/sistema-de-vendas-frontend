@@ -4,24 +4,28 @@
     <!-- Menu -->
     <div class="nav-menu">
       <a routerLink="/inicio" class="nav-item">
-        <i class="fas fa-home"></i> Início
+        <i class="fas fa-home"></i>
+          <span>Início</span>
       </a>
       <a routerLink="/mercados" class="nav-item">
-        <i class="fas fa-store-alt"></i> Produtos
+        <i class="fas fa-store-alt"></i>
+        <span>Produtos</span>
       </a>
       <a routerLink="/sobre" class="nav-item">
-        <i class="fas fa-store-alt"></i> Sobre
+        <i class="fas fa-store-alt"></i>
+        <span>Sobre</span>
       </a>
       <a routerLink="/contato" class="nav-item">
-        <i class="fas fa-store-alt"></i> Contato
+        <i class="fas fa-store-alt"></i>
+        <span>Contato</span>
       </a>
 
       <!-- Área de Login/Usuário -->
-       <div *ngIf="!usuarioEstaLogado">
-        <a routerLink="/login" class="nav-item">
+       <div class="acoes-usuario">
+        <a routerLink="/login" *ngIf="!usuarioEstaLogado" class="nav-item">
           <i class="fas fa-user"></i> Login
         </a>
-      </div>
+
 
       <!-- Dropdown do usuário logado -->
       <div *ngIf="usuarioEstaLogado" class="nav-user-dropdown">
@@ -44,7 +48,7 @@
             <span class="carrinho-texto">Meu Carrinho</span>
           </a>
         </div>
-
+        </div>
         <app-carrinho
           [showModal]="showModalCarrinho"
           (fechar)="fecharModalCarrinho()"
