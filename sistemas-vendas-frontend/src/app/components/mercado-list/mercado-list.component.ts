@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Mercado } from '../../models/mercado.model';
 import { MercadoService } from '../../services/mercado.service';
 import { RouterModule } from '@angular/router';
@@ -9,7 +9,8 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./mercado-list.component.css']
 })
 export class MercadoListComponent implements OnInit {
-  @Output() mercados: Mercado[] = [];
+  mercados: Mercado[] = [];
+
   loading: boolean = true;
   constructor(private mercadoService: MercadoService) { }
 

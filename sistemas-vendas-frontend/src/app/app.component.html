@@ -12,16 +12,16 @@
         <span>Produtos</span>
       </a>
       <a routerLink="/sobre" class="nav-item">
-        <i class="fas fa-store-alt"></i>
+        <i class="fas fa-comments"></i>
         <span>Sobre</span>
       </a>
       <a routerLink="/contato" class="nav-item">
-        <i class="fas fa-store-alt"></i>
+        <i class="fas fa-phone-alt"></i>
         <span>Contato</span>
       </a>
 
       <!-- Área de Login/Usuário -->
-       <div class="acoes-usuario">
+      <div class="acoes-usuario">
         <a routerLink="/login" *ngIf="!usuarioEstaLogado" class="nav-item">
           <i class="fas fa-user"></i> Login
         </a>
@@ -48,7 +48,7 @@
             <span class="carrinho-texto">Meu Carrinho</span>
           </a>
         </div>
-        </div>
+      </div>
         <app-carrinho
           [showModal]="showModalCarrinho"
           (fechar)="fecharModalCarrinho()"
