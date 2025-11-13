@@ -23,7 +23,6 @@ export class CadastroComponent {
       email: ['', [Validators.required, Validators.email]],
       telefone: ['', [Validators.required]],
       endereco: [''],
-      cpf: ['', [Validators.required]],
       senha: ['', [Validators.required, Validators.minLength(6)]]
     });
   }

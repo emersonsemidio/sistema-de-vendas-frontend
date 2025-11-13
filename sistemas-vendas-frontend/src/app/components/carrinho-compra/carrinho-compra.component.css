@@ -72,6 +72,7 @@
   padding: 1rem 0.75rem;
   vertical-align: middle;
   border-bottom: 1px solid #e9ecef;
+  color: black
 }
 
 .table tbody tr:hover {

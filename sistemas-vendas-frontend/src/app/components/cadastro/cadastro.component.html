@@ -37,22 +37,6 @@
         </div>
       </div>
 
-      <!-- CPF -->
-      <div class="form-group">
-        <label for="cpf">CPF *</label>
-        <input
-          type="text"
-          id="cpf"
-          formControlName="cpf"
-          placeholder="000.000.000-00"
-          class="form-input"
-          mask="000.000.000-00"
-          [class.error]="cadastroForm.get('cpf')?.invalid && cadastroForm.get('cpf')?.touched">
-        <div class="error-message" *ngIf="cadastroForm.get('cpf')?.invalid && cadastroForm.get('cpf')?.touched">
-          CPF inválido
-        </div>
-      </div>
-
       <!-- Telefone -->
       <div class="form-group">
         <label for="telefone">Telefone *</label>

@@ -72,10 +72,12 @@ h2::after {
 }
 
 .img-card {
-  width: 100%;
+  display: block;
+  margin: 0 auto; /* Adicione isso */
+  width: 300px;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 /* Título do mercado */
@@ -86,6 +88,9 @@ h2::after {
   margin-bottom: 15px;
   padding-bottom: 10px;
   border-bottom: 2px solid #ecf0f1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 /* Informações do mercado */

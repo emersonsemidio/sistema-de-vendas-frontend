@@ -6,4 +6,5 @@ export interface Mercado {
   telefone: string;
   endereco: string;
   ativo: boolean;
+  imagemUrl: string;
 }
