@@ -116,11 +116,14 @@ h2::after {
 }
 
 .info-text {
-  color: #ffffff;
-  font-size: 0.85rem;
-  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.5em;
+  line-height: 1.25;
 }
-
 /* Descrição */
 .descricao {
   margin-bottom: 0.8rem;
