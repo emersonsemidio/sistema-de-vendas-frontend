@@ -41,23 +41,24 @@ h2::after {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Container da imagem */
 .produto-imagem-container {
   position: relative;
   overflow: hidden;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   background-color: #f8f9fa;
+  /* Define altura fixa para o container */
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Imagem do produto */
 .produto-imagem {
-  margin: 0 auto;
-  max-width: 300px;
-  max-height: 300px;
-  object-fit: contain;
-  /* padding-right: 10px; */
-  padding-top: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ou 'contain' para manter proporção sem cortar */
+  padding: 15px;
   background-color: white;
 }
 
