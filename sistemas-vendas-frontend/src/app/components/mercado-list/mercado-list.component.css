@@ -73,11 +73,12 @@ h2::after {
 
 .img-card {
   display: block;
-  margin: 0 auto; /* Adicione isso */
+  margin: 0 auto;
   width: 300px;
-  height: auto;
+  height: 200px; /* Altura fixa */
   border-radius: 8px;
   margin-bottom: 0px;
+  object-fit: cover; /* ou 'contain' para manter proporção sem cortar */
 }
 
 /* Título do mercado */
